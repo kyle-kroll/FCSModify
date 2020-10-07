@@ -17,7 +17,9 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("primary"));
+        stage.setResizable(false);
+        stage.setTitle("FCSModify - Kyle Kroll");
         stage.setScene(scene);
         stage.show();
     }
