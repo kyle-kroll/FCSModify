@@ -17,7 +17,6 @@
             <items>
                   <MenuItem id="menuSelect" mnemonicParsing="false" onAction="#selectFCS" text="Open FCS" />
                   <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" onAction="#saveFCS" text="Save as..." />
-                  <MenuItem mnemonicParsing="false" onAction="#testFunction" text="Test" />
               <MenuItem id="menuClose" mnemonicParsing="false" onAction="#closeApp" text="Close" />
             </items>
           </Menu>
