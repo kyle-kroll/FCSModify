@@ -1,40 +1,13 @@
 package com.kroll.fcsmodify;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 
 /**
- * JavaFX App
+ * JavaFX App entry point. This is just used for the jlink Image generation as
+ * it doesn't like it when the .main() entry class extends Application so we create this shell entry point.
+ * When normally developing you can ignore this and directly run Run.java
  */
-public class App extends Application {
+public class App {
 
-    private static Scene scene;
-
-    @Override
-    public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"));
-        stage.setResizable(false);
-        stage.setTitle("FCSModify - Kyle Kroll");
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
-    }
-
-    private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
-        return fxmlLoader.load();
-    }
-
-    public static void main(String[] args) {
-        launch();
-    }
+    public static void main(String[] args) { Run.main(args); }
 
 }
