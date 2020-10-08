@@ -18,10 +18,38 @@
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>13</version>
+            <classifier>win</classifier>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>13</version>
             <classifier>mac</classifier>
         </dependency>
+        
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>13</version>
+            <classifier>win</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>13</version>
+            <classifier>mac</classifier>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>13</version>
+            <classifier>win</classifier>
+        </dependency>
+        
     </dependencies>
     <build>
         <plugins>
@@ -41,6 +69,7 @@
                     <source>13</source>
                     <target>13</target>
                     <release>13</release>
+                    <launcher>launcher</launcher>
                     <mainClass>com.kroll.fcsmodify.App</mainClass>
                 </configuration>
                 
